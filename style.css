@@ -1,7 +1,17 @@
 #header {
-    background-image:url(asserts/giphy.gif) ;
+    background-image:url(asserts/gifs/giphy.gif) ;
     height: 100px;
+    width: 300px;
+    margin: 0 auto;
     background-position: center;
+}
+#header {
+    @media (min-width: 768px) {
+        background-image:url(asserts/gifs/giphy.gif) ;
+        height: 100px;
+        width: 100%;
+        background-position: center;
+    }
 }
 #titulo {
     color: #ffffff;
@@ -11,10 +21,19 @@
     align-items: center;
     height: 100%;
 }
-.contenido {
+#centro {
     display: flex;
-    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+}
+#centro {
+    @media (min-width: 750px) {
+        max-width: 33.33vw;
+    }
+}
+
+.datos{
+    display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100%;
+    
 }
