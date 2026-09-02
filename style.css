@@ -6,7 +6,7 @@
     background-position: center;
 }
 #header {
-    @media (min-width: 768px) {
+    @media (min-width: 850px) {
         background-image:url(asserts/gifs/giphy.gif) ;
         height: 100px;
         width: 100%;
@@ -23,17 +23,35 @@
 }
 #centro {
     display: flex;
-    width: 500px;
+    width: 100%;
     margin: 0 auto;
+    background-color: #ffffff;
+    justify-content: center;
 }
 #centro {
-    @media (min-width: 750px) {
-        max-width: 33.33vw;
+    @media (min-width: 850px) {
+        width: 500px;
     }
 }
 
 .datos{
-    display: flex;
-    justify-content: center;
+    width: 250px;
+}
+
+
+.gif{
+    width: 100%;
+    height: auto;
+}
+
+.sub{
+    border: 1px solid #000000;
+    height: 41px;
     
+}
+
+h2 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
